@@ -24,7 +24,7 @@ li {
 
 .text-btn-modal {
   color: white;
-  text-decoration : none;
+  text-decoration: none;
 }
 
 .button {
@@ -41,15 +41,13 @@ li {
   text-shadow: 0 1px 0 #fff;
   cursor: pointer;
   transition: all 0.2s ease-out;
-
-  &:hover {
-    border-color: #999;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  }
-
-  &:active {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset;
-  }
+}
+.button:hover {
+  border-color: #999;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+.button:active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset;
 }
 
 .overlay {
@@ -62,22 +60,19 @@ li {
   transition: opacity 200ms;
   visibility: hidden;
   opacity: 0;
-
-  &.light {
-    background: rgba(255, 255, 255, 0.5);
-  }
-
-  .cancel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: default;
-  }
-
-  &:target {
-    visibility: visible;
-    opacity: 1;
-  }
+}
+.overlay.light {
+  background: rgba(255, 255, 255, 0.5);
+}
+.overlay .cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
 }
 
 .popup {
@@ -88,46 +83,41 @@ li {
   width: 450px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   position: relative;
-
-  .light & {
-    border-color: #aaa;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-  }
-
-  h2 {
-    margin-top: 0;
-    color: #666;
-    font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
-  }
-
-  .close {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 20px;
-    right: 20px;
-    opacity: 0.8;
-    transition: all 200ms;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #666;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  .content {
-    max-height: 600px;
-    overflow: auto;
-  }
-
-  p {
-    margin: 0 0 1em;
-
-    &:last-child {
-      margin: 0;
-    }
-  }
 }
+.light .popup {
+  border-color: #aaa;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+.popup h2 {
+  margin-top: 0;
+  color: #666;
+  font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+  transition: all 200ms;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666;
+}
+.popup .close:hover {
+  opacity: 1;
+}
+.popup .content {
+  max-height: 600px;
+  overflow: auto;
+}
+.popup p {
+  margin: 0 0 1em;
+}
+.popup p:last-child {
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

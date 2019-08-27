@@ -1,11 +1,11 @@
 {
-  "name": "electron-quick-start",
+  "name": "DeePlayer",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
+  "description": "A minimal player Electron application",
+  "main": "App/js/main.js",
   "scripts": {
-    "start": "npm run sass | electron .",
-    "sass": "sass --watch "
+    "start": " electron . | npm run sass",
+    "sass": "sass --watch assets/scss/styles.scss:assets/css/styles.css "
   },
   "repository": "https://github.com/daviani/electronTest.git",
   "keywords": [
@@ -15,7 +15,7 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "Daviani",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^6.0.3"
